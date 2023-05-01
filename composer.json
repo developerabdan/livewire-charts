@@ -1,11 +1,11 @@
 {
     "name": "developerabdan/livewire-charts",
-    "description": "Livewire Charts",
+    "description": "Livewire Charts Fork",
     "keywords": [
         "asantibanez",
         "livewire-charts"
     ],
-    "homepage": "https://github.com/asantibanez/livewire-charts",
+    "homepage": "https://github.com/developerabdan/livewire-charts",
     "license": "MIT",
     "type": "library",
     "authors": [
