@@ -22,6 +22,22 @@ trait HasDataLabels
         return $this;
     }
 
+    public function withTotal($offset = -20){
+        if(!is_null($offset)) {
+            data_set($this->dataLabels, 'offsetY', $offset);
+        }
+        data_set($this->dataLabels, 'style', [
+            'fontSize' => '12px',
+            'colors' => ['#000000']
+        ]);
+
+        return $this;
+    }
+    public function withFormat(){
+        data_set($this->dataLabels, 'formatter', "function(val){ return val + '%' }");
+        return $this;
+    }
+
     public function withoutDataLabels()
     {
         data_set($this->dataLabels, 'enabled', false);
